@@ -8,6 +8,7 @@ import  Router  from './src/Router';
 class App extends Component {
 
   UNSAFE_componentWillMount(){
+    console.disableYellowBox = true; //hide warnings blocks
     const firebase = require('firebase');
 
     const config = {
